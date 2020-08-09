@@ -33,6 +33,7 @@
         ]
     },
     "devDependencies": {
+        "jest-axe": "^3.5.0",
         "prettier": "^2.0.5"
     }
 }
