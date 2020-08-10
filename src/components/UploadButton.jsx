@@ -5,7 +5,7 @@ import StyledButton from './styled/Button';
 function UploadButton() {
     const { uploadColour } = useContext(ThemeContext);
     return (
-        <StyledButton variant="contained" buttonColour={uploadColour}>
+        <StyledButton variant="contained" buttoncolour={uploadColour}>
             Upload Avatar
         </StyledButton>
     );

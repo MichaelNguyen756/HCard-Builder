@@ -6,12 +6,14 @@ const Button = styled(MaterialButton)`
         color: rgb(255, 255, 255);
         font-weight: bold;
 
-        ${({ buttonColour }) =>
-            buttonColour &&
+        ${({ buttoncolour }) =>
+            buttoncolour &&
             css`
-                background-color: ${buttonColour};
+                background-color: ${buttoncolour};
             `}
     }
+
+    width: 48%;
 `;
 
 export default Button;

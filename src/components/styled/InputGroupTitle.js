@@ -8,6 +8,9 @@ const InputGroupTitle = styled.div`
 
     font-size: 0.7rem;
     font-weight: bold;
+    text-align: left;
+    display: block;
+    margin: 1rem 0;
 `;
 
 export default InputGroupTitle;

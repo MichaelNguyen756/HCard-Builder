@@ -1,11 +1,11 @@
 import styled, { css } from 'styled-components';
 
-const Title = styled.h1`
+const Entry = styled.div`
+    flex: 4 4 80%;
+
     ${({ fontColour }) => css`
         color: ${fontColour};
     `}
-
-    text-align: left;
 `;
 
-export default Title;
+export default Entry;

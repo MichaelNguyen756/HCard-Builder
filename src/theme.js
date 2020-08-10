@@ -7,6 +7,7 @@ export const themes = {
         subTitleColour: 'rgb(176, 184, 188)',
         uploadColour: 'rgb(98, 123, 139)',
         createColour: 'rgb(52, 152, 219)',
+        lineColour: 'rgb(219, 224, 226)',
     },
 };
 
