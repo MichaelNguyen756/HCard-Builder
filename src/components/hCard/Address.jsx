@@ -9,20 +9,21 @@ import StyledEntry from './styled/Entry';
 function Address() {
     const { fontColour, titleColour, lineColour } = useTheme();
     const [state] = useStateValue();
-    const {} = state;
+    const { HouseName, Street, Suburb, State, Postcode, Country } = state;
     return (
         <div className="adr">
             <StyledEntryRow lineColour={lineColour}>
                 <StyledLabel fontColour={titleColour}>ADDRESS</StyledLabel>
                 <StyledEntry className="street-address" fontColour={fontColour}>
-                    1 MOSELE
+                    {HouseName} {Street}
                 </StyledEntry>
             </StyledEntryRow>
             <StyledEntryRow lineColour={lineColour}>
                 <StyledLabel />
                 <StyledEntry fontColour={fontColour}>
-                    <span className="locality">Carlingford</span>, &nbsp;
-                    <span className="region">NSW</span>
+                    <span className="locality">{Suburb}</span>
+                    {Suburb && State && ', '}
+                    <span className="region">{State}</span>
                 </StyledEntry>
             </StyledEntryRow>
             <StyledEntryRow lineColour={lineColour}>
@@ -34,7 +35,7 @@ function Address() {
                     fontColour={fontColour}
                     isBottomRow={true}
                 >
-                    2099
+                    {Postcode}
                 </StyledEntry>
                 <StyledLabel fontColour={titleColour} isBottomRow={true}>
                     COUNTRY
@@ -44,7 +45,7 @@ function Address() {
                     fontColour={fontColour}
                     isBottomRow={true}
                 >
-                    Aus
+                    {Country}
                 </StyledEntry>
             </StyledEntryRow>
         </div>

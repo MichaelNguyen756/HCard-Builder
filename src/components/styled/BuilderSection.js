@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 const BuilderSection = styled.section`
     padding: 1rem 0.8rem;
