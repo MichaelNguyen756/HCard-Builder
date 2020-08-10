@@ -5,7 +5,7 @@ const Input = styled.input`
         color: ${fontColour};
     `}
 
-    font-size: 1.2rem;
+    font-size: 1.03rem;
 `;
 
 export default Input;

@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { ThemeContext, themes } from './theme';
 import { StateProvider } from './context';
-import { initialState, Reducer } from './reducers/App';
+import { initialState, Reducer } from './reducers';
 import BuilderSection from 'components/BuilderSection';
 
 const hCardBuilderWidth = 45;
