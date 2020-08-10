@@ -8,7 +8,11 @@ function Name() {
     const { titleColour } = useTheme();
 
     return (
-        <StyledName backgroundColour={titleColour}>Michael Nguyen</StyledName>
+        <StyledName className="n" backgroundColour={titleColour}>
+            <span className="given-name">Michael</span>
+            &nbsp;
+            <span className="family-name">Nguyen</span>
+        </StyledName>
     );
 }
 

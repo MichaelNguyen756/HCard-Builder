@@ -1,16 +1,17 @@
 import styled, { css } from 'styled-components';
 
 const Label = styled.div`
-    flex: 1 1 20%;
-    font-size: 0.8rem;
-    text-align: left;
+    font-size: 0.6rem;
+    font-weight: 600;
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-end;
 
-    ${({ fontColour, isBottomRow }) => css`
+    ${({ fontColour }) => css`
         color: ${fontColour};
-
-        /* ${isBottomRow} &&
-        width: */
     `}
+
+    flex: ${({ isBottomRow }) => (isBottomRow ? '2 2 20%' : '1 1 20%')}
 `;
 
 export default Label;

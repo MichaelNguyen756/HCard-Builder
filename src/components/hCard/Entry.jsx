@@ -8,18 +8,10 @@ function Entry({ label, value }) {
     const { fontColour, titleColour } = useTheme();
     return (
         <Fragment>
-            <StyledLabel
-                className="type"
-                fontColour={titleColour}
-                isBottomRow={true}
-            >
+            <StyledLabel className="type" fontColour={titleColour}>
                 {label}
             </StyledLabel>
-            <StyledEntry
-                className="value"
-                fontColour={fontColour}
-                isBottomRow={true}
-            >
+            <StyledEntry className="value" fontColour={fontColour}>
                 {value}
             </StyledEntry>
         </Fragment>

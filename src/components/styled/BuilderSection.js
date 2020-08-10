@@ -1,11 +1,8 @@
 import styled, { css } from 'styled-components';
 
 const BuilderSection = styled.section`
-    ${({ sectionwidth }) => css`
-        width: ${sectionwidth}vw;
-    `}
-
     padding: 1rem 0.8rem;
+    flex: 9 9 45%;
 `;
 
 export default BuilderSection;
