@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
-import { ThemeContext } from 'theme';
+import React from 'react';
+import { useTheme } from 'context/theme';
 import StyledButton from './styled/Button';
 
 function UploadButton() {
-    const { uploadColour } = useContext(ThemeContext);
+    const { uploadColour } = useTheme();
     return (
         <StyledButton variant="contained" buttoncolour={uploadColour}>
             Upload Avatar

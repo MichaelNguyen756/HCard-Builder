@@ -1,15 +1,15 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
-import { ThemeContext } from 'theme';
+import { useTheme } from 'context/theme';
 
 import StyledInputField from './styled/InputField';
 import StyledInputLabel from './styled/InputLabel';
 import StyledInput from './styled/Input';
 
-import { useStateValue } from 'context';
+import { useStateValue } from 'context/state';
 
 function InputField({ id, dispatchType, children, type }) {
-    const { fontColour, titleColour } = useContext(ThemeContext);
+    const { fontColour, titleColour } = useTheme();
     const [, dispatch] = useStateValue();
 
     function handleChange(event) {

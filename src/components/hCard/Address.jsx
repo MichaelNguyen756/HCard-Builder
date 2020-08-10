@@ -1,12 +1,12 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
-import { ThemeContext } from 'theme';
+import { useTheme } from 'context/theme';
 import StyledEntryRow from './styled/EntryRow';
 import StyledLabel from './styled/Label';
 import StyledEntry from './styled/Entry';
 
 function Address() {
-    const { fontColour, titleColour } = useContext(ThemeContext);
+    const { fontColour, titleColour } = useTheme();
     return (
         <div className="adr">
             <StyledEntryRow>

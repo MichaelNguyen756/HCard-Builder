@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
-import { ThemeContext } from 'theme';
+import React from 'react';
+import { useTheme } from 'context/theme';
 import StyledButton from './styled/Button';
 
 function CreateButton() {
-    const { createColour } = useContext(ThemeContext);
+    const { createColour } = useTheme();
     return (
         <StyledButton
             variant="contained"
