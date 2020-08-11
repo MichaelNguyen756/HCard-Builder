@@ -1,14 +1,15 @@
 import React from 'react';
-
 import StyledHCard from './styled/HCard';
 
-import Name from './Name';
+// import Avatar from 'components/Avatar';
+// import Name from './Name';
+import TopSection from './TopSection';
 import EntryGroup from './EntryGroup';
 
 function HCard() {
     return (
         <StyledHCard className="vcard">
-            <Name />
+            <TopSection />
             <EntryGroup />
         </StyledHCard>
     );

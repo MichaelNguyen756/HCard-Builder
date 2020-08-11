@@ -9,6 +9,9 @@ function CreateButton() {
             variant="contained"
             color="primary"
             buttoncolour={createColour}
+            onClick={() =>
+                alert('You tried to create an HCard, but nothing happened...')
+            }
         >
             Create hCard
         </StyledButton>

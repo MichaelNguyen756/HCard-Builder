@@ -1,19 +1,16 @@
 import React from 'react';
-
-import { useTheme } from 'context/theme';
 import { useStateValue } from 'context/state';
-
+import Space from 'components/Space';
 import StyledName from './styled/Name';
 
 function Name() {
-    const { titleColour } = useTheme();
     const [state] = useStateValue();
     const { GivenName, Surname } = state;
 
     return (
-        <StyledName className="n" backgroundColour={titleColour}>
+        <StyledName className="n">
             <span className="given-name">{GivenName}</span>
-            &nbsp;
+            <Space />
             <span className="family-name">{Surname}</span>
         </StyledName>
     );

@@ -2,6 +2,7 @@ import React from 'react';
 
 import { useTheme } from 'context/theme';
 import { useStateValue } from 'context/state';
+import Space from 'components/Space';
 import StyledEntryRow from './styled/EntryRow';
 import StyledLabel from './styled/Label';
 import StyledEntry from './styled/Entry';
@@ -23,6 +24,7 @@ function Address() {
                 <StyledEntry fontColour={fontColour}>
                     <span className="locality">{Suburb}</span>
                     {Suburb && State && ', '}
+                    {Suburb && State && <Space />}
                     <span className="region">{State}</span>
                 </StyledEntry>
             </StyledEntryRow>
