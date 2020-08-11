@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const width = 62;
 const height = 60;
@@ -19,7 +19,10 @@ const Head = styled.div`
     border-bottom-left-radius: ${bottomHorizontalRadius}% ${bottomVerticalRadius}%;
     border-bottom-right-radius: ${bottomHorizontalRadius}% ${bottomVerticalRadius}%;
     z-index: 15;
-    background-color: rgb(154, 154, 154);
+
+    ${({ fillColour }) => css`
+        background-color: ${fillColour};
+    `}
 `;
 
 export default Head;

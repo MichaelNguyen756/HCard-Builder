@@ -9,6 +9,7 @@ export const themes = {
         createColour: 'rgb(52, 152, 219)',
         lineColour: 'rgb(219, 224, 226)',
         previewBackgroundColour: 'rgb(225, 228, 231)',
+        avatarHead: 'rgb(154, 154, 154)',
     },
 };
 
